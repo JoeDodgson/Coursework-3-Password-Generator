@@ -97,6 +97,10 @@ h2 {
   font-size: 1.5rem;
 }
 
+textarea {
+  user-select: text;
+}
+
 .float-right {
   float: right;
 }
