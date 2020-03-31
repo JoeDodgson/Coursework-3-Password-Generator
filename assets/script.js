@@ -28,7 +28,7 @@ function writePassword() {
   }
 
   //Password length prompt
-  var passwordLength = prompt("Please enter a password length between 8 and 128 characters.\nClick OK to confirm your selection");
+  var passwordLength = prompt("Please enter the number of characters you would like your password to be (between 8 and 128 characters).\nClick OK to confirm your selection");
   
   //Change password length to an integer
   passwordLength = parseFloat(passwordLength);
