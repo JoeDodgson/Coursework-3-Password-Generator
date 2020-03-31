@@ -1,9 +1,33 @@
+/* Pseudo classes */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+.card-header::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  background: #e7e9eb;
+  height: 2px;
+}
+
+.card-footer::before {
+  content: " ";
+  display: block;
+  width: 100%;
+  background: #e7e9eb;
+  height: 2px;
+}
+
+.card-footer::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/*Look and feel styling for the static webpage*/
 html,
 body,
 .wrapper {
@@ -42,34 +66,12 @@ header {
   padding: 30px 40px;
 }
 
-.card-header::after {
-  content: " ";
-  display: block;
-  width: 100%;
-  background: #e7e9eb;
-  height: 2px;
-}
-
 .card-body {
   min-height: 100px;
 }
 
 .card-footer {
   text-align: center;
-}
-
-.card-footer::before {
-  content: " ";
-  display: block;
-  width: 100%;
-  background: #e7e9eb;
-  height: 2px;
-}
-
-.card-footer::after {
-  content: " ";
-  display: block;
-  clear: both;
 }
 
 .btn {
@@ -126,6 +128,7 @@ textarea {
   overflow: hidden;
 }
 
+/* Media queries for site responsiveness */
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
