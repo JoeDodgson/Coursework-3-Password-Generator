@@ -13,7 +13,7 @@ body,
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: #f9fbfd;
 }
 
@@ -93,6 +93,10 @@ button[disabled] {
   background: #c0c7cf;
 }
 
+h2 {
+  font-size: 1.5rem;
+}
+
 .float-right {
   float: right;
 }
@@ -132,6 +136,30 @@ button[disabled] {
 
 @media (max-width: 500px) {
   .btn {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+  h2 {
+    font-size: 1.10rem;
+  }
+  h3 {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 575px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+  h2 {
+    font-size: 0.85rem;
+  }
+  h3 {
     font-size: 0.8rem;
   }
 }

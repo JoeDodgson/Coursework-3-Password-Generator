@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="wrapper">
@@ -14,7 +15,10 @@
       </header>
       <div class="card">
         <div class="card-header">
-          <h2>Generate a Password</h2>
+          <h2>Click the button below to generate a new password</h2>
+        </div>
+        <div>
+          <h3></h3>
         </div>
         <div class="card-body">
           <textarea
@@ -22,6 +26,7 @@
             id="password"
             placeholder="Your Secure Password"
             aria-label="Generated Password"
+            style="user-select: text;"
           >
           </textarea>
         </div>
